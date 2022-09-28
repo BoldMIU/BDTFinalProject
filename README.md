@@ -16,9 +16,9 @@ Start HBase:
 2. sudo service hbase-master start
 
 Start Kafka:
-1. ./bin/kafka-server-start.sh -daemon config/server.properties  //Start Kafka server
-2. ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties  //Start Zookeeper
-3. ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic expense  //Create topic
+1. ./bin/kafka-server-start.sh -daemon config/server.properties 
+2. ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties  
+3. ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic expense  
 
 Produce message to topic:
 tail -n +2  ~/workspace/final.project/input/expense.csv | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic expense
