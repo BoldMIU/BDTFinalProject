@@ -1,4 +1,4 @@
-# BDTFinalProject
+
 CS523 BDT final project
 
 Spark streaming processing module for static csv dataset (Provided by https://www.kaggle.com/) with Kafka and stored into HBase database. 
@@ -27,6 +27,6 @@ Run Spark Streaming project form Eclipse or
 
 How to check result in HBase database:
 
-1. $hbase shell
-2. >scan 'expense_db'
+>$hbase shell
+>scan 'expense_db'
 
