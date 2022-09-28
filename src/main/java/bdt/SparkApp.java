@@ -127,7 +127,7 @@ public class SparkApp {
 							Bytes.toBytes(s.getMonthlyExpnses()));
 
 					dsTable.put(row);
-					System.out.println("Data empty!.... ");
+					System.out.println("Data inserted!.... ");
 				}
 			rdd.coalesce(1).saveAsTextFile("/home/cloudera/workspace/final.project/output");
 			});
