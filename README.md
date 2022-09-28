@@ -21,6 +21,7 @@ Start Kafka:
 3. ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic expense  
 
 Produce message to topic:
+
 tail -n +2  ~/workspace/final.project/input/expense.csv | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic expense
 
 Run Spark Streaming project form Eclipse or 
